@@ -12,9 +12,9 @@
 		<type image="iso" primary="true" flags="overlay" hybrid="true" firmware="efi" kernelcmdline="splash" hybridpersistent_filesystem="ext4" hybridpersistent="true" mediacheck="true"/>
 		<version>1.0.0</version>
 		<packagemanager>zypper</packagemanager>
-		<locale>en_US</locale>
-		<keytable>us</keytable>
-		<timezone>Europe/Berlin</timezone>
+		<locale>en_GB</locale>
+		<keytable>uk</keytable>
+		<timezone>Europe/London</timezone>
 		<rpm-excludedocs>true</rpm-excludedocs>
 		<rpm-check-signatures>false</rpm-check-signatures>
 		<bootsplash-theme>openSUSE</bootsplash-theme>
