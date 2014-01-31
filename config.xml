@@ -75,6 +75,9 @@
 		<package name="which"/>
 		<package name="shim"/>
 		<package name="kernel-default"/>
+		<package name="alsa"/>
+		<package name="alsa-plugins"/>
+		<package name="alsa-utils"/>
 		<package name="timezone"/>
 	</packages>
 	<packages type="iso">
