@@ -36,7 +36,8 @@
 		</type>
 	</preferences>
 	<users>
-		<user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
+		<user password="XXXXXXXXXXXXX" home="/root" name="root" groups="root"/>
+		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
 	<repository type="rpm-md" alias="kiwi" priority="1">
 		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_42.3"/>
