@@ -85,6 +85,7 @@
 		<package name="alsa"/>
 		<package name="alsa-plugins"/>
 		<package name="alsa-utils"/>
+		<package name="lirc-core"/>
 		<package name="mythtv-common"/>
 		<package name="mythtv-base-themes"/>
 		<package name="mythtv-frontend"/>

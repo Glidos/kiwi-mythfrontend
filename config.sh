@@ -60,6 +60,11 @@ baseSetRunlevel 3
 chmod +s /usr/bin/Xorg
 patch -p 0 -i /patches/xorg.patch
 
+baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DRIVER devinput
+baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DEVICE /dev/input/by-id/usb-Philips_eHome_Infrared_Transceiver_PH00YzQQ-event-if00
+
+suseInsertService lircd
+
 ln -s /etc/systemd/system/mythfrontend@.service /etc/systemd/system/getty.target.wants/getty@tty8.service
 mkdir /etc/systemd/system/remote-fs.target.wants
 
