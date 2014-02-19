@@ -51,6 +51,12 @@
 	<repository type="rpm-md" alias="Packman" priority="4">
 		<source path="http://packman.inode.at/suse/openSUSE_Leap_42.3/"/>
 	</repository>
+	<repository type="rpm-md" alias="nvidia" priority="5">
+		<source path="http://download.nvidia.com/opensuse/leap/42.3/"/>
+	</repository>
+	<strip type="delete">
+		<file name="/lib/modules/4.1.12-1-default/kernel/drivers/gpu/drm/nouveau/nouveau.ko"/>
+	</strip>
 	<packages type="image">
 		<package name="checkmedia"/>
 		<package name="patterns-openSUSE-base"/>
@@ -79,6 +85,10 @@
 		<package name="shim"/>
 		<package name="kernel-default"/>
 		<package name="nfs-client"/>
+		<package name="libvdpau1"/>
+		<package name="nvidia-gfxG03-kmp-default"/>
+		<package name="nvidia-glG03"/>
+		<package name="x11-video-nvidiaG03"/>
 		<package name="xorg-x11-server"/>
 		<package name="xf86-input-evdev"/>
 		<package name="twm"/>

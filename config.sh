@@ -57,6 +57,8 @@ fi
 baseSetRunlevel 3
 
 
+ldconfig
+
 chmod +s /usr/bin/Xorg
 patch -p 0 -i /patches/xorg.patch
 
