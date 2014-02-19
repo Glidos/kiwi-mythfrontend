@@ -48,6 +48,9 @@
 	<repository type="rpm-md" alias="Leap_42_3Update" priority="2">
 		<source path="http://download.opensuse.org/update/leap/42.3/oss"/>
 	</repository>
+	<repository type="rpm-md" alias="Packman" priority="4">
+		<source path="http://packman.inode.at/suse/openSUSE_Leap_42.3/"/>
+	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
 		<package name="patterns-openSUSE-base"/>
@@ -82,6 +85,15 @@
 		<package name="alsa"/>
 		<package name="alsa-plugins"/>
 		<package name="alsa-utils"/>
+		<package name="mythtv-common"/>
+		<package name="mythtv-base-themes"/>
+		<package name="mythtv-frontend"/>
+		<package name="mythbrowser"/>
+		<package name="mythmusic"/>
+		<package name="mythnetvision"/>
+		<package name="perl-mythtv"/>
+		<package name="php-mythtv"/>
+		<package name="python-mythtv"/>
 		<package name="timezone"/>
 	</packages>
 	<packages type="iso">
