@@ -78,6 +78,7 @@
 		<package name="which"/>
 		<package name="shim"/>
 		<package name="kernel-default"/>
+		<package name="nfs-client"/>
 		<package name="xorg-x11-server"/>
 		<package name="xf86-input-evdev"/>
 		<package name="twm"/>

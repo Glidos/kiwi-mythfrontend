@@ -1,0 +1,13 @@
+[Unit]
+Description=Mythfrontend photos
+After=remote-fs-pre.target
+Wants=remote-fs-pre.target
+Before=remote-fs.target
+
+[Mount]
+What=glidos.site:/home/public/HolidayPhotos
+Where=/home/mythfrontend/photos
+Type=nfs
+
+[Install]
+RequiredBy=remote-fs.target

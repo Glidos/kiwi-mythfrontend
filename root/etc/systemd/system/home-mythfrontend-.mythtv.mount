@@ -1,0 +1,13 @@
+[Unit]
+Description=Mythfrontend persistent data mount
+After=remote-fs-pre.target
+Wants=remote-fs-pre.target
+Before=remote-fs.target
+
+[Mount]
+What=glidos.site:/tftpboot/ptang-mythtv
+Where=/home/mythfrontend/.mythtv
+Type=nfs
+
+[Install]
+RequiredBy=remote-fs.target

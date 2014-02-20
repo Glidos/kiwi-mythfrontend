@@ -67,6 +67,9 @@ suseInsertService lircd
 
 ln -s /etc/systemd/system/mythfrontend@.service /etc/systemd/system/getty.target.wants/getty@tty8.service
 mkdir /etc/systemd/system/remote-fs.target.wants
+ln -s /etc/systemd/system/home-mythfrontend-music.mount /etc/systemd/system/remote-fs.target.wants/home-mythfrontend-music.mount
+ln -s /etc/systemd/system/home-mythfrontend-photos.mount /etc/systemd/system/remote-fs.target.wants/home-mythfrontend-photos.mount
+ln -s /etc/systemd/system/home-mythfrontend-.mythtv.mount /etc/systemd/system/remote-fs.target.wants/home-mythfrontend-.mythtv.mount
 
 #==========================================
 # remove package docs
