@@ -84,6 +84,7 @@
 		<package name="which"/>
 		<package name="shim"/>
 		<package name="kernel-default"/>
+		<package name="ntp"/>
 		<package name="nfs-client"/>
 		<package name="libvdpau1"/>
 		<package name="nvidia-gfxG03-kmp-default"/>

@@ -57,6 +57,8 @@ fi
 baseSetRunlevel 3
 
 
+suseInsertService ntpd
+
 ldconfig
 
 chmod +s /usr/bin/Xorg
