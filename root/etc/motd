@@ -1,7 +1,3 @@
-This is the Leap 42.3 JeOS SuSE Linux System.
-To upgrade your system call:
-
-        zypper refresh
-        zypper up
+This is a kiwi-built MythTV frontend based on opensuse Leap 42.3
 
 Have a lot of fun...

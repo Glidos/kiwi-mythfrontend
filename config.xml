@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<image schemaversion="6.7" name="LimeJeOS-Leap-42.3">
+<image schemaversion="6.7" name="MythTV">
 	<description type="system">
-		<author>Marcus Schaefer</author>
-		<contact>ms@suse.de</contact>
+		<author>Paul Gardiner</author>
+		<contact>mythtv@glidos.net</contact>
 		<specification>
-			Leap 42.3 JeOS, is a small text based image
+			MythTV frontend
 		</specification>
 	</description>
 	<preferences>
 		<type image="iso" primary="true" flags="overlay" hybrid="true" firmware="efi" kernelcmdline="splash" hybridpersistent_filesystem="ext4" hybridpersistent="true" mediacheck="true"/>
-		<version>1.42.3</version>
+		<version>1.0.0</version>
 		<packagemanager>zypper</packagemanager>
 		<locale>en_US</locale>
 		<keytable>us</keytable>
