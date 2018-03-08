@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<image schemaversion="6.8" name="LimeJeOS-Leap-42.3">
+<image schemaversion="6.7" name="LimeJeOS-Leap-42.3">
 	<description type="system">
 		<author>Marcus Schaefer</author>
 		<contact>ms@suse.de</contact>
@@ -41,8 +41,11 @@
 	<repository type="rpm-md" alias="kiwi" priority="1">
 		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_42.3"/>
 	</repository>
-	<repository type="rpm-md" alias="Leap_42_3" imageinclude="true">
-		<source path="obs://openSUSE:Leap:42.3/standard"/>
+	<repository type="yast2" alias="Leap_42_3" priority="3">
+		<source path="http://download.opensuse.org/distribution/leap/42.3/repo/oss"/>
+	</repository>
+	<repository type="rpm-md" alias="Leap_42_3Update" priority="2">
+		<source path="http://download.opensuse.org/update/leap/42.3/oss"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
