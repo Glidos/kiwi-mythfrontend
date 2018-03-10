@@ -26,7 +26,7 @@ ConditionPathExists=/dev/tty0
 
 [Service]
 # the VT is cleared by TTYVTDisallocate
-ExecStart=-/sbin/agetty --noclear %I
+ExecStart=-/usr/bin/openvt -fwc 8 -- /bin/su - mythfrontend -c /usr/bin/startx >& /home/mythfrontend/mfout
 Type=idle
 Restart=always
 RestartSec=0
@@ -45,3 +45,4 @@ Environment=LANG= LANGUAGE= LC_CTYPE= LC_NUMERIC= LC_TIME= LC_COLLATE= LC_MONETA
 
 [Install]
 WantedBy=getty.target
+Alias=getty.target.wants/getty@tty8.service

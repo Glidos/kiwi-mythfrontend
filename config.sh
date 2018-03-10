@@ -56,6 +56,13 @@ fi
 #--------------------------------------
 baseSetRunlevel 3
 
+
+chmod +s /usr/bin/Xorg
+patch -p 0 -i /patches/xorg.patch
+
+ln -s /etc/systemd/system/mythfrontend@.service /etc/systemd/system/getty.target.wants/getty@tty8.service
+mkdir /etc/systemd/system/remote-fs.target.wants
+
 #==========================================
 # remove package docs
 #------------------------------------------
