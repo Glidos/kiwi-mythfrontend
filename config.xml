@@ -21,7 +21,7 @@
 		<bootloader-theme>openSUSE</bootloader-theme>
 	</preferences>
 	<preferences>
-		<type image="pxe" filesystem="squashfs" boot="netboot/suse-leap42.3"/>
+		<type image="pxe" filesystem="squashfs" boot="netboot/suse-leap15.0"/>
 		<type image="vmx" filesystem="ext4" bootloader="grub2" kernelcmdline="splash" firmware="efi"/>
 		<type image="oem" filesystem="ext4" initrd_system="dracut" installiso="true" bootloader="grub2" kernelcmdline="splash" firmware="efi">
 			<oemconfig>
@@ -40,19 +40,19 @@
 		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
 	<repository type="rpm-md" alias="kiwi" priority="1">
-		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_42.3"/>
+		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.0"/>
 	</repository>
-	<repository type="yast2" alias="Leap_42_3" priority="3">
-		<source path="http://download.opensuse.org/distribution/leap/42.3/repo/oss"/>
+	<repository type="yast2" alias="Leap_15_0" priority="3">
+		<source path="http://download.opensuse.org/distribution/leap/15.0/repo/oss"/>
 	</repository>
-	<repository type="rpm-md" alias="Leap_42_3Update" priority="2">
-		<source path="http://download.opensuse.org/update/leap/42.3/oss"/>
+	<repository type="rpm-md" alias="Leap_15_0Update" priority="2">
+		<source path="http://download.opensuse.org/update/leap/15.0/oss"/>
 	</repository>
 	<repository type="rpm-md" alias="Packman" priority="4">
-		<source path="http://packman.inode.at/suse/openSUSE_Leap_42.3/"/>
+		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.0/"/>
 	</repository>
 	<repository type="rpm-md" alias="nvidia" priority="5">
-		<source path="http://download.nvidia.com/opensuse/leap/42.3/"/>
+		<source path="http://download.nvidia.com/opensuse/leap/15.0/"/>
 	</repository>
 	<strip type="delete">
 		<file name="/lib/modules/4.1.12-1-default/kernel/drivers/gpu/drm/nouveau/nouveau.ko"/>
