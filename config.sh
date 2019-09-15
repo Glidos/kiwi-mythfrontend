@@ -75,6 +75,8 @@ ln -s /etc/systemd/system/home-mythfrontend-music.mount /etc/systemd/system/remo
 ln -s /etc/systemd/system/home-mythfrontend-photos.mount /etc/systemd/system/remote-fs.target.wants/home-mythfrontend-photos.mount
 ln -s /etc/systemd/system/home-mythfrontend-.mythtv.mount /etc/systemd/system/remote-fs.target.wants/home-mythfrontend-.mythtv.mount
 
+update-alternatives --auto libglx.so
+
 #==========================================
 # remove package docs
 #------------------------------------------
