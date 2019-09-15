@@ -87,9 +87,9 @@
 		<package name="ntp"/>
 		<package name="nfs-client"/>
 		<package name="libvdpau1"/>
-		<package name="nvidia-gfxG03-kmp-default"/>
-		<package name="nvidia-glG03"/>
-		<package name="x11-video-nvidiaG03"/>
+		<package name="nvidia-gfxG04-kmp-default"/>
+		<package name="nvidia-glG04"/>
+		<package name="x11-video-nvidiaG04"/>
 		<package name="xorg-x11-server"/>
 		<package name="xf86-input-evdev"/>
 		<package name="twm"/>
