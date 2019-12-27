@@ -45,9 +45,6 @@
 	<repository type="yast2" alias="Leap_15_1" priority="3">
 		<source path="http://download.opensuse.org/distribution/leap/15.1/repo/oss"/>
 	</repository>
-	<repository type="rpm-md" alias="Leap_15_1Update" priority="2">
-		<source path="http://download.opensuse.org/update/leap/15.1/oss"/>
-	</repository>
 	<repository type="rpm-md" alias="Packman" priority="4">
 		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.1/"/>
 	</repository>
