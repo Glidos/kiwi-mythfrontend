@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<image schemaversion="6.7" name="MythTV">
+<image schemaversion="6.8" name="MythTV">
 	<description type="system">
 		<author>Paul Gardiner</author>
 		<contact>mythtv@glidos.net</contact>
@@ -21,13 +21,13 @@
 		<bootloader-theme>openSUSE</bootloader-theme>
 	</preferences>
 	<preferences>
-		<type image="pxe" filesystem="squashfs" boot="netboot/suse-leap15.1"/>
 		<type image="vmx" filesystem="ext4" bootloader="grub2" kernelcmdline="splash" firmware="efi"/>
 		<type image="oem" filesystem="ext4" initrd_system="dracut" installiso="true" bootloader="grub2" kernelcmdline="splash" firmware="efi">
 			<oemconfig>
 				<oem-systemsize>2048</oem-systemsize>
 				<oem-swap>true</oem-swap>
 				<oem-device-filter>/dev/ram</oem-device-filter>
+				<oem-multipath-scan>false</oem-multipath-scan>
 			</oemconfig>
 			<machine memory="512" guestOS="suse" HWversion="4">
 				<vmdisk id="0" controller="ide"/>
@@ -45,18 +45,12 @@
 	<repository type="yast2" alias="Leap_15_1" priority="3">
 		<source path="http://download.opensuse.org/distribution/leap/15.1/repo/oss"/>
 	</repository>
-	<repository type="rpm-md" alias="Leap_15_1Update" priority="2">
-		<source path="http://download.opensuse.org/update/leap/15.1/oss"/>
-	</repository>
 	<repository type="rpm-md" alias="Packman" priority="4">
 		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.1/"/>
 	</repository>
 	<repository type="rpm-md" alias="nvidia" priority="5">
 		<source path="http://download.nvidia.com/opensuse/leap/15.1/"/>
 	</repository>
-	<strip type="delete">
-		<file name="/lib/modules/4.1.12-1-default/kernel/drivers/gpu/drm/nouveau/nouveau.ko"/>
-	</strip>
 	<packages type="image">
 		<package name="checkmedia"/>
 		<package name="patterns-openSUSE-base"/>

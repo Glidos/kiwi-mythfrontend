@@ -27,29 +27,14 @@ test -f /.profile && . /.profile
 echo "Configure image: [$kiwi_iname]..."
 
 #======================================
-# Mount system filesystems
-#--------------------------------------
-baseMount
-
-#======================================
 # Setup baseproduct link
 #--------------------------------------
 suseSetupProduct
 
 #======================================
-# Add missing gpg keys to rpm
-#--------------------------------------
-suseImportBuildKey
-
-#======================================
 # Activate services
 #--------------------------------------
 suseInsertService sshd
-if [[ ${kiwi_type} =~ oem|vmx ]];then
-    suseInsertService grub_config
-else
-    suseRemoveService grub_config
-fi
 
 #======================================
 # Setup default target, multi-user
@@ -63,6 +48,9 @@ ldconfig
 
 chmod +s /usr/bin/Xorg
 patch -p 0 -i /patches/xorg.patch
+
+baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SEARCHLIST "site"
+baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SERVERS "10.0.0.5"
 
 baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DRIVER devinput
 baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DEVICE /dev/input/by-id/usb-Philips_eHome_Infrared_Transceiver_PH00YzQQ-event-if00
@@ -82,27 +70,3 @@ update-alternatives --auto libglx.so
 #------------------------------------------
 rm -rf /usr/share/doc/packages/*
 rm -rf /usr/share/doc/manual/*
-rm -rf /opt/kde*
-
-#======================================
-# only basic version of vim is
-# installed; no syntax highlighting
-#--------------------------------------
-sed -i -e's/^syntax on/" syntax on/' /etc/vimrc
-
-#======================================
-# SuSEconfig
-#--------------------------------------
-suseConfig
-
-#======================================
-# Remove yast if not in use
-#--------------------------------------
-suseRemoveYaST
-
-#======================================
-# Umount kernel filesystems
-#--------------------------------------
-baseCleanMount
-
-exit 0
