@@ -78,6 +78,8 @@
 		<package name="which"/>
 		<package name="shim"/>
 		<package name="kernel-default"/>
+		<package name="kernel-firmware"/>
+		<package name="haveged"/>
 		<package name="ntp"/>
 		<package name="nfs-client"/>
 		<package name="libvdpau1"/>
