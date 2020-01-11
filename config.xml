@@ -9,7 +9,7 @@
 		</specification>
 	</description>
 	<preferences>
-		<type image="iso" primary="true" flags="overlay" hybrid="true" firmware="efi" kernelcmdline="splash" hybridpersistent_filesystem="ext4" hybridpersistent="true" mediacheck="true"/>
+		<type image="iso" primary="true" flags="overlay" hybrid="true" firmware="efi" kernelcmdline="splash" hybridpersistent="false" mediacheck="true"/>
 		<version>1.0.0</version>
 		<packagemanager>zypper</packagemanager>
 		<locale>en_US</locale>
