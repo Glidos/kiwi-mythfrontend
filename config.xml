@@ -43,7 +43,7 @@
 		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.1"/>
 	</repository>
 	<repository type="yast2" alias="Leap_15_1" priority="3">
-		<source path="http://download.opensuse.org/distribution/leap/15.1/repo/oss"/>
+		<source path="obs://openSUSE:Leap:15.1/standard"/>
 	</repository>
 	<repository type="rpm-md" alias="Packman" priority="4">
 		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.1/"/>
