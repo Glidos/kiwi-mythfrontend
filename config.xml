@@ -8,8 +8,12 @@
 			MythTV frontend
 		</specification>
 	</description>
+	<profiles>
+		<profile name="Live" description="Live image" import="true"/>
+		<profile name="Virtual" description="Simple Disk image"/>
+		<profile name="Disk" description="Expandable Disk image"/>
+	</profiles>
 	<preferences>
-		<type image="iso" primary="true" flags="overlay" hybrid="true" firmware="efi" kernelcmdline="splash" hybridpersistent="false" mediacheck="true"/>
 		<version>1.0.0</version>
 		<packagemanager>zypper</packagemanager>
 		<locale>en_US</locale>
@@ -17,11 +21,21 @@
 		<timezone>Europe/Berlin</timezone>
 		<rpm-excludedocs>true</rpm-excludedocs>
 		<rpm-check-signatures>false</rpm-check-signatures>
-		<bootsplash-theme>openSUSE</bootsplash-theme>
+		<bootsplash-theme>bgrt</bootsplash-theme>
 		<bootloader-theme>openSUSE</bootloader-theme>
 	</preferences>
-	<preferences>
-		<type image="vmx" filesystem="ext4" bootloader="grub2" kernelcmdline="splash" firmware="efi"/>
+	<preferences profiles="Live">
+		<type image="iso" primary="true" flags="overlay" hybrid="true" firmware="efi" kernelcmdline="splash" hybridpersistent="false" mediacheck="true"/>
+	</preferences>
+	<preferences profiles="Virtual">
+		<type image="vmx" filesystem="ext4" bootloader="grub2" kernelcmdline="splash" firmware="efi">
+			<machine memory="512" guestOS="suse" HWversion="4">
+				<vmdisk id="0" controller="ide"/>
+				<vmnic driver="e1000" interface="0" mode="bridged"/>
+			</machine>
+		</type>
+	</preferences>
+	<preferences profiles="Disk">
 		<type image="oem" filesystem="ext4" initrd_system="dracut" installiso="true" bootloader="grub2" kernelcmdline="splash" firmware="efi">
 			<oemconfig>
 				<oem-systemsize>2048</oem-systemsize>
@@ -29,10 +43,6 @@
 				<oem-device-filter>/dev/ram</oem-device-filter>
 				<oem-multipath-scan>false</oem-multipath-scan>
 			</oemconfig>
-			<machine memory="512" guestOS="suse" HWversion="4">
-				<vmdisk id="0" controller="ide"/>
-				<vmnic driver="e1000" interface="0" mode="bridged"/>
-			</machine>
 		</type>
 	</preferences>
 	<users>
@@ -40,21 +50,21 @@
 		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
 	<repository type="rpm-md" alias="kiwi" priority="1">
-		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.1"/>
+		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.2"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15_1" priority="3">
-		<source path="obs://openSUSE:Leap:15.1/standard"/>
+	<repository type="yast2" alias="Leap_15_2" priority="3">
+		<source path="obs://openSUSE:Leap:15.2/standard"/>
 	</repository>
 	<repository type="rpm-md" alias="Packman" priority="4">
-		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.1/"/>
+		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.2/"/>
 	</repository>
 	<repository type="rpm-md" alias="nvidia" priority="5">
-		<source path="http://download.nvidia.com/opensuse/leap/15.1/"/>
+		<source path="http://download.nvidia.com/opensuse/leap/15.2/"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
 		<package name="patterns-openSUSE-base"/>
-		<package name="plymouth-branding-openSUSE"/>
+		<package name="plymouth-theme-bgrt"/>
 		<package name="plymouth-dracut"/>
 		<package name="grub2-branding-openSUSE"/>
 		<package name="ifplugd"/>
