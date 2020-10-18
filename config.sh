@@ -49,9 +49,6 @@ ldconfig
 chmod +s /usr/bin/Xorg
 patch -p 0 -i /patches/xorg.patch
 
-baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SEARCHLIST "site"
-baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SERVERS "10.0.0.5"
-
 baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DRIVER devinput
 baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DEVICE /dev/input/by-id/usb-Philips_eHome_Infrared_Transceiver_PH00YzQQ-event-if00
 
