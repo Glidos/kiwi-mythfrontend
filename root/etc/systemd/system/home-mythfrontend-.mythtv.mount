@@ -5,7 +5,7 @@ Wants=remote-fs-pre.target
 Before=remote-fs.target
 
 [Mount]
-What=glidos.site:/tftpboot/ptang-mythtv
+What=glidos.site:/tftpboot/slurp-mythtv
 Where=/home/mythfrontend/.mythtv
 Type=nfs
 

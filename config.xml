@@ -58,9 +58,6 @@
 	<repository type="rpm-md" alias="Packman" priority="4">
 		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.2/"/>
 	</repository>
-	<repository type="rpm-md" alias="nvidia" priority="5">
-		<source path="http://download.nvidia.com/opensuse/leap/15.2/"/>
-	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
 		<package name="patterns-openSUSE-base"/>
@@ -92,11 +89,10 @@
 		<package name="haveged"/>
 		<package name="ntp"/>
 		<package name="nfs-client"/>
-		<package name="libvdpau1"/>
-		<package name="nvidia-gfxG04-kmp-default"/>
-		<package name="nvidia-glG04"/>
-		<package name="x11-video-nvidiaG04"/>
+		<package name="ucode-intel"/>
+		<package name="intel-vaapi-driver"/>
 		<package name="xorg-x11-server"/>
+		<package name="xf86-video-intel"/>
 		<package name="xf86-input-evdev"/>
 		<package name="twm"/>
 		<package name="xinit"/>
