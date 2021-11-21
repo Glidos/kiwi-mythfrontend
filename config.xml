@@ -62,7 +62,7 @@
 		<source path="obs://devel:languages:perl/openSUSE_Leap_15.3"/>
 	</repository>
 	<repository type="rpm-dir" alias="Local RPMs" priority="5">
-		<source path="dir:///home/public/tmp/myrepo"/>
+		<source path="dir:///home/public/tmp/myrepo_15.3"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
