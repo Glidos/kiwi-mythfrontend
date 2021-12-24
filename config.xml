@@ -88,6 +88,7 @@
 		<package name="which"/>
 		<package name="shim"/>
 		<package name="kernel-default"/>
+		<package name="kernel-default-extra"/>
 		<package name="kernel-firmware"/>
 		<package name="haveged"/>
 		<package name="ntp"/>
