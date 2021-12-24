@@ -50,13 +50,16 @@
 		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
 	<repository type="rpm-md" alias="kiwi" priority="1">
-		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.2"/>
+		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.3"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15_2" priority="3">
-		<source path="obs://openSUSE:Leap:15.2/standard"/>
+	<repository type="yast2" alias="Leap_15.3Update" priority="2">
+		<source path="obs://openSUSE:Leap:15.3:Update/standard"/>
+	</repository>
+	<repository type="yast2" alias="Leap_15.3" priority="3">
+		<source path="obs://openSUSE:Leap:15.3/standard"/>
 	</repository>
 	<repository type="rpm-md" alias="Packman" priority="4">
-		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.2/"/>
+		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.3/"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
