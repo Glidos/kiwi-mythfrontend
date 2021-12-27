@@ -57,9 +57,8 @@ baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DEVICE /dev/input/by-id/usb-Philip
 
 suseInsertService lircd
 
-ln -s /etc/systemd/system/mythfrontend@.service /etc/systemd/system/getty.target.wants/getty@tty8.service
+ln -s /etc/systemd/system/getty@.service /etc/systemd/system/getty.target.wants/getty@tty8.service
 mkdir /etc/systemd/system/remote-fs.target.wants
-
 ln -s /etc/systemd/system/home-mythfrontend-.mythtv.mount /etc/systemd/system/remote-fs.target.wants/home-mythfrontend-.mythtv.mount
 
 update-alternatives --auto libglx.so

@@ -50,15 +50,18 @@
 		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
 	<repository type="rpm-md" alias="kiwi" priority="1">
-		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.2"/>
+		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.3"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15_2" priority="2">
-		<source path="obs://openSUSE:Leap:15.2/standard"/>
+	<repository type="yast2" alias="Leap_15.3Update" priority="2">
+		<source path="obs://openSUSE:Leap:15.3:Update/standard"/>
 	</repository>
-	<repository type="rpm-md" alias="perl" priority="3">
-		<source path="obs://devel:languages:perl/openSUSE_Leap_15.2"/>
+	<repository type="yast2" alias="Leap_15.3" priority="3">
+		<source path="obs://openSUSE:Leap:15.3/standard"/>
 	</repository>
-	<repository type="rpm-dir" alias="Local RPMs" priority="4">
+	<repository type="rpm-md" alias="perl" priority="4">
+		<source path="obs://devel:languages:perl/openSUSE_Leap_15.3"/>
+	</repository>
+	<repository type="rpm-dir" alias="Local RPMs" priority="5">
 		<source path="dir:///home/public/tmp/myrepo"/>
 	</repository>
 	<packages type="image">
@@ -88,6 +91,7 @@
 		<package name="which"/>
 		<package name="shim"/>
 		<package name="kernel-default"/>
+		<package name="kernel-default-extra"/>
 		<package name="kernel-firmware"/>
 		<package name="haveged"/>
 		<package name="ntp"/>
