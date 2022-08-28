@@ -105,7 +105,7 @@
 		<package name="alsa"/>
 		<package name="alsa-plugins"/>
 		<package name="alsa-utils"/>
-		<package name="lirc-core"/>
+		<package name="v4l-utils"/>
 		<package name="mythtv-frontend"/>
 		<package name="mythplugins-mythmusic"/>
 		<package name="timezone"/>
