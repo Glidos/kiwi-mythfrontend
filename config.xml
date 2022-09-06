@@ -66,6 +66,7 @@
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
+		<package name="cryptsetup"/>
 		<package name="patterns-openSUSE-base"/>
 		<package name="plymouth-theme-bgrt"/>
 		<package name="plymouth-dracut"/>
@@ -93,7 +94,6 @@
 		<package name="kernel-default"/>
 		<package name="kernel-default-extra"/>
 		<package name="kernel-firmware"/>
-		<package name="haveged"/>
 		<package name="ntp"/>
 		<package name="nfs-client"/>
 		<package name="ucode-intel"/>
