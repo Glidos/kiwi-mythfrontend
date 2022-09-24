@@ -58,8 +58,11 @@
 	<repository type="yast2" alias="Leap_15.3" priority="3">
 		<source path="obs://openSUSE:Leap:15.3/standard"/>
 	</repository>
-	<repository type="rpm-md" alias="Packman" priority="4">
-		<source path="http://packman.inode.at/suse/openSUSE_Leap_15.3/"/>
+	<repository type="rpm-md" alias="perl" priority="4">
+		<source path="obs://devel:languages:perl/openSUSE_Leap_15.3"/>
+	</repository>
+	<repository type="rpm-dir" alias="Local RPMs" priority="5">
+		<source path="dir:///home/public/tmp/myrepo_15.3"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
@@ -104,15 +107,8 @@
 		<package name="alsa-plugins"/>
 		<package name="alsa-utils"/>
 		<package name="lirc-core"/>
-		<package name="mythtv-common"/>
-		<package name="mythtv-base-themes"/>
 		<package name="mythtv-frontend"/>
-		<package name="mythbrowser"/>
-		<package name="mythmusic"/>
-		<package name="mythnetvision"/>
-		<package name="perl-mythtv"/>
-		<package name="php-mythtv"/>
-		<package name="python-mythtv"/>
+		<package name="mythplugins-mythmusic"/>
 		<package name="timezone"/>
 	</packages>
 	<packages type="iso">
