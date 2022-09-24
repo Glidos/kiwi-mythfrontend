@@ -99,7 +99,6 @@
 		<package name="ucode-intel"/>
 		<package name="intel-vaapi-driver"/>
 		<package name="xorg-x11-server"/>
-		<package name="xf86-video-intel"/>
 		<package name="xf86-input-evdev"/>
 		<package name="twm"/>
 		<package name="xinit"/>
