@@ -50,22 +50,23 @@
 		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
 	<repository type="rpm-md" alias="kiwi" priority="1">
-		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.3"/>
+		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.4"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15.3Update" priority="2">
-		<source path="obs://openSUSE:Leap:15.3:Update/standard"/>
+	<repository type="yast2" alias="Leap_15.4Update" priority="2">
+		<source path="obs://openSUSE:Leap:15.4:Update/standard"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15.3" priority="3">
-		<source path="obs://openSUSE:Leap:15.3/standard"/>
+	<repository type="yast2" alias="Leap_15.4" priority="3">
+		<source path="obs://openSUSE:Leap:15.4/standard"/>
 	</repository>
 	<repository type="rpm-md" alias="perl" priority="4">
-		<source path="obs://devel:languages:perl/openSUSE_Leap_15.3"/>
+		<source path="obs://devel:languages:perl/15.4"/>
 	</repository>
 	<repository type="rpm-dir" alias="Local RPMs" priority="5">
-		<source path="dir:///home/public/tmp/myrepo_15.3"/>
+		<source path="dir:///home/public/tmp/myrepo_15.4"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
+		<package name="cryptsetup"/>
 		<package name="patterns-openSUSE-base"/>
 		<package name="plymouth-theme-bgrt"/>
 		<package name="plymouth-dracut"/>
@@ -93,13 +94,11 @@
 		<package name="kernel-default"/>
 		<package name="kernel-default-extra"/>
 		<package name="kernel-firmware"/>
-		<package name="haveged"/>
 		<package name="ntp"/>
 		<package name="nfs-client"/>
 		<package name="ucode-intel"/>
 		<package name="intel-vaapi-driver"/>
 		<package name="xorg-x11-server"/>
-		<package name="xf86-video-intel"/>
 		<package name="xf86-input-evdev"/>
 		<package name="twm"/>
 		<package name="xinit"/>
