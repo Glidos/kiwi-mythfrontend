@@ -61,7 +61,7 @@
 	<repository type="rpm-md" alias="perl" priority="4">
 		<source path="obs://devel:languages:perl/15.4"/>
 	</repository>
-	<repository type="rpm-dir" alias="Local RPMs" priority="5">
+	<repository type="rpm-dir" alias="Local_RPMs" priority="5">
 		<source path="dir:///home/public/tmp/myrepo_15.4"/>
 	</repository>
 	<packages type="image">
