@@ -9,6 +9,7 @@
 		</specification>
 	</description>
 	<profiles>
+		<profile name="KIS" description="Separate kernel initfs and system" import="true"/>
 		<profile name="Live" description="Live image" import="true"/>
 		<profile name="Virtual" description="Simple Disk image"/>
 		<profile name="Disk" description="Expandable Disk image"/>
@@ -23,6 +24,9 @@
 		<rpm-check-signatures>false</rpm-check-signatures>
 		<bootsplash-theme>bgrt</bootsplash-theme>
 		<bootloader-theme>openSUSE</bootloader-theme>
+	</preferences>
+	<preferences profiles="KIS">
+		<type image="kis" filesystem="ext3"/>
 	</preferences>
 	<preferences profiles="Live">
 		<type image="iso" primary="true" flags="overlay" hybrid="true" firmware="efi" kernelcmdline="splash" hybridpersistent="false" mediacheck="true"/>
@@ -109,6 +113,10 @@
 		<package name="mythtv-frontend"/>
 		<package name="mythplugins-mythmusic"/>
 		<package name="timezone"/>
+	</packages>
+	<packages type="kis">
+		<package name="gfxboot-branding-openSUSE"/>
+		<package name="dracut-kiwi-overlay"/>
 	</packages>
 	<packages type="iso">
 		<package name="gfxboot-branding-openSUSE"/>
