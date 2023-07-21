@@ -117,6 +117,7 @@
 	<packages type="kis">
 		<package name="gfxboot-branding-openSUSE"/>
 		<package name="dracut-kiwi-overlay"/>
+		<package name="nbd"/>
 	</packages>
 	<packages type="iso">
 		<package name="gfxboot-branding-openSUSE"/>
