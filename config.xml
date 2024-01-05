@@ -54,19 +54,19 @@
 		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
 	<repository type="rpm-md" alias="kiwi" priority="1">
-		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.4"/>
+		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.5"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15.4Update" priority="2">
-		<source path="obs://openSUSE:Leap:15.4:Update/standard"/>
+	<repository type="yast2" alias="Leap_15.5Update" priority="2">
+		<source path="obs://openSUSE:Leap:15.5:Update/standard"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15.4" priority="3">
-		<source path="obs://openSUSE:Leap:15.4/standard"/>
+	<repository type="yast2" alias="Leap_15.5" priority="3">
+		<source path="obs://openSUSE:Leap:15.5/standard"/>
 	</repository>
 	<repository type="rpm-md" alias="perl" priority="4">
-		<source path="obs://devel:languages:perl/15.4"/>
+		<source path="obs://devel:languages:perl/15.5"/>
 	</repository>
 	<repository type="rpm-dir" alias="Local_RPMs" priority="5">
-		<source path="dir:///home/public/tmp/myrepo_15.4"/>
+		<source path="dir:///home/public/tmp/myrepo_15.5"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
@@ -117,6 +117,7 @@
 	<packages type="kis">
 		<package name="gfxboot-branding-openSUSE"/>
 		<package name="dracut-kiwi-overlay"/>
+		<package name="nbd"/>
 	</packages>
 	<packages type="iso">
 		<package name="gfxboot-branding-openSUSE"/>
