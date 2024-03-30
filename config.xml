@@ -56,16 +56,25 @@
 	<repository type="rpm-md" alias="kiwi" priority="1">
 		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.5"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15.5Update" priority="2">
-		<source path="obs://openSUSE:Leap:15.5:Update/standard"/>
+	<repository type="rpm-md" alias="Leap_15.5SLE" priority="2">
+		<source path="http://download.opensuse.org/update/leap/15.5/sle"/>
 	</repository>
-	<repository type="yast2" alias="Leap_15.5" priority="3">
-		<source path="obs://openSUSE:Leap:15.5/standard"/>
+	<repository type="rpm-md" alias="Leap_15.5Backports" priority="3">
+	        <source path="http://download.opensuse.org/update/leap/15.5/backports"/>
 	</repository>
-	<repository type="rpm-md" alias="perl" priority="4">
+	<repository type="rpm-md" alias="Leap_15.5Update" priority="4">
+		<source path="http://download.opensuse.org/update/leap/15.5/oss"/>
+	</repository>
+	<repository type="rpm-md" alias="Leap_15.5" priority="5">
+		<source path="http://download.opensuse.org/distribution/leap/15.5/repo/oss"/>
+	</repository>
+	<repository type="rpm-md" alias="perl" priority="6">
 		<source path="obs://devel:languages:perl/15.5"/>
 	</repository>
-	<repository type="rpm-dir" alias="Local_RPMs" priority="5">
+	<repository type="rpm-md" alias="python" priority="7">
+		<source path="obs://devel:languages:python:backports/15.5"/>
+	</repository>
+	<repository type="rpm-dir" alias="Local_RPMs" priority="8">
 		<source path="dir:///home/public/tmp/myrepo_15.5"/>
 	</repository>
 	<packages type="image">
