@@ -29,18 +29,10 @@
 		<type image="kis" filesystem="ext3"/>
 	</preferences>
 	<preferences profiles="Live">
-		<type image="iso" primary="true" flags="overlay" hybrid="true" firmware="efi" kernelcmdline="splash" hybridpersistent="false" mediacheck="true"/>
-	</preferences>
-	<preferences profiles="Virtual">
-		<type image="vmx" filesystem="ext4" bootloader="grub2" kernelcmdline="splash" firmware="efi">
-			<machine memory="512" guestOS="suse" HWversion="4">
-				<vmdisk id="0" controller="ide"/>
-				<vmnic driver="e1000" interface="0" mode="bridged"/>
-			</machine>
-		</type>
+		<type image="iso" primary="true" flags="overlay" firmware="efi" kernelcmdline="splash" hybridpersistent="false" mediacheck="true"/>
 	</preferences>
 	<preferences profiles="Disk">
-		<type image="oem" filesystem="ext4" initrd_system="dracut" installiso="true" bootloader="grub2" kernelcmdline="splash" firmware="efi">
+		<type image="oem" filesystem="ext4" initrd_system="dracut" installiso="true" kernelcmdline="splash" firmware="efi">
 			<oemconfig>
 				<oem-systemsize>2048</oem-systemsize>
 				<oem-swap>true</oem-swap>
