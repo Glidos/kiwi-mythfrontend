@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<image schemaversion="6.8" name="MythTV">
+<image schemaversion="7.4" name="MythTV">
 	<description type="system">
 		<author>Paul Gardiner</author>
 		<contact>mythtv@glidos.net</contact>
