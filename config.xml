@@ -114,6 +114,7 @@
 		<package name="mythtv-frontend"/>
 		<package name="mythplugins-mythmusic"/>
 		<package name="timezone"/>
+		<package name="procps"/>
 	</packages>
 	<packages type="kis">
 		<package name="gfxboot-branding-openSUSE"/>
