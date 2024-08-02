@@ -49,8 +49,8 @@ ldconfig
 chmod +s /usr/bin/Xorg
 patch -p 0 -i /patches/xorg.patch
 
-baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SEARCHLIST "site"
-baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SERVERS "10.0.0.5"
+baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SEARCHLIST "home.arpa"
+baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SERVERS "10.0.0.2"
 
 ln -s /etc/systemd/system/getty@.service /etc/systemd/system/getty.target.wants/getty@tty8.service
 mkdir /etc/systemd/system/remote-fs.target.wants
