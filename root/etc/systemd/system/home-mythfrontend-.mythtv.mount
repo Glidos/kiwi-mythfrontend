@@ -5,7 +5,7 @@ Wants=remote-fs-pre.target
 Before=remote-fs.target
 
 [Mount]
-What=glidos.home.arpa:/tftpboot/slurp-mythtv
+What=glidos.home.arpa:/srv/tftpboot/slurp-mythtv
 Where=/home/mythfrontend/.mythtv
 Type=nfs
 
