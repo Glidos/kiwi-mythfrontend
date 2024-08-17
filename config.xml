@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<image schemaversion="6.8" name="MythTV">
+<image schemaversion="7.4" name="MythTV">
 	<description type="system">
 		<author>Paul Gardiner</author>
 		<contact>mythtv@glidos.net</contact>
@@ -46,28 +46,28 @@
 		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
 	<repository type="rpm-md" alias="kiwi" priority="1">
-		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.5"/>
+		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.6"/>
 	</repository>
-	<repository type="rpm-md" alias="Leap_15.5SLE" priority="2">
-		<source path="http://download.opensuse.org/update/leap/15.5/sle"/>
+	<repository type="rpm-md" alias="Leap_15.6SLE" priority="2">
+		<source path="http://download.opensuse.org/update/leap/15.6/sle"/>
 	</repository>
-	<repository type="rpm-md" alias="Leap_15.5Backports" priority="3">
-	        <source path="http://download.opensuse.org/update/leap/15.5/backports"/>
+	<repository type="rpm-md" alias="Leap_15.6Backports" priority="3">
+	        <source path="http://download.opensuse.org/update/leap/15.6/backports"/>
 	</repository>
-	<repository type="rpm-md" alias="Leap_15.5Update" priority="4">
-		<source path="http://download.opensuse.org/update/leap/15.5/oss"/>
+	<repository type="rpm-md" alias="Leap_15.6Update" priority="4">
+		<source path="http://download.opensuse.org/update/leap/15.6/oss"/>
 	</repository>
-	<repository type="rpm-md" alias="Leap_15.5" priority="5">
-		<source path="http://download.opensuse.org/distribution/leap/15.5/repo/oss"/>
+	<repository type="rpm-md" alias="Leap_15.6" priority="5">
+		<source path="http://download.opensuse.org/distribution/leap/15.6/repo/oss"/>
 	</repository>
 	<repository type="rpm-md" alias="perl" priority="6">
-		<source path="obs://devel:languages:perl/15.5"/>
+		<source path="obs://devel:languages:perl/15.6"/>
 	</repository>
 	<repository type="rpm-md" alias="python" priority="7">
-		<source path="obs://devel:languages:python:backports/15.5"/>
+		<source path="obs://devel:languages:python/15.6"/>
 	</repository>
 	<repository type="rpm-dir" alias="Local_RPMs" priority="8">
-		<source path="dir:///home/public/tmp/myrepo_15.5"/>
+		<source path="dir:///home/public/tmp/myrepo_15.6"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
@@ -114,6 +114,7 @@
 		<package name="mythtv-frontend"/>
 		<package name="mythplugins-mythmusic"/>
 		<package name="timezone"/>
+		<package name="procps"/>
 	</packages>
 	<packages type="kis">
 		<package name="gfxboot-branding-openSUSE"/>
