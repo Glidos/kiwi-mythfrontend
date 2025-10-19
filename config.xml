@@ -102,7 +102,7 @@
 		<package name="ntp"/>
 		<package name="nfs-client"/>
 		<package name="ucode-intel"/>
-		<package name="intel-vaapi-driver"/>
+		<package name="intel-media-driver"/>
 		<package name="xorg-x11-server"/>
 		<package name="xf86-input-evdev"/>
 		<package name="twm"/>
