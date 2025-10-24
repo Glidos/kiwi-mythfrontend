@@ -18,7 +18,7 @@
 		<version>1.0.0</version>
 		<packagemanager>zypper</packagemanager>
 		<locale>en_GB</locale>
-		<keytable>uk</keytable>
+		<keytable>gb</keytable>
 		<timezone>Europe/London</timezone>
 		<rpm-excludedocs>true</rpm-excludedocs>
 		<rpm-check-signatures>false</rpm-check-signatures>
