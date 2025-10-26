@@ -35,6 +35,7 @@ suseSetupProduct
 # Activate services
 #--------------------------------------
 suseInsertService sshd
+suseInsertService NetworkManager
 
 #======================================
 # Setup default target, multi-user
@@ -46,8 +47,7 @@ suseInsertService ntpd
 
 ldconfig
 
-chmod +s /usr/bin/Xorg
-patch -p 0 -i /patches/xorg.patch
+chmod +s /usr/bin/Xorg.bin
 
 baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DRIVER devinput
 baseUpdateSysConfig /etc/sysconfig/lirc LIRCD_DEVICE /dev/input/by-id/usb-Philips_eHome_Infrared_Transceiver_PH00YzQQ-event-if00
