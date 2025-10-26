@@ -45,38 +45,25 @@
 		<user password="XXXXXXXXXXXXX" home="/root" name="root" groups="root"/>
 		<user password="YYYYYYYYYYYYY" home="/home/mythfrontend" name="mythfrontend" groups="users,audio,video" id="500"/>
 	</users>
-	<repository type="rpm-md" alias="kiwi" priority="1">
-		<source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.6"/>
-	</repository>
-	<repository type="rpm-md" alias="Leap_15.6SLE" priority="2">
-		<source path="http://download.opensuse.org/update/leap/15.6/sle"/>
-	</repository>
-	<repository type="rpm-md" alias="Leap_15.6Backports" priority="3">
-	        <source path="http://download.opensuse.org/update/leap/15.6/backports"/>
-	</repository>
-	<repository type="rpm-md" alias="Leap_15.6Update" priority="4">
-		<source path="http://download.opensuse.org/update/leap/15.6/oss"/>
-	</repository>
-	<repository type="rpm-md" alias="Leap_15.6" priority="5">
-		<source path="http://download.opensuse.org/distribution/leap/15.6/repo/oss"/>
+	<repository type="rpm-md" alias="Leap_16.0" priority="5">
+		<source path="http://download.opensuse.org/distribution/leap/16.0/repo/oss"/>
 	</repository>
 	<repository type="rpm-md" alias="perl" priority="6">
-		<source path="obs://devel:languages:perl/15.6"/>
+		<source path="obs://devel:languages:perl/16.0"/>
 	</repository>
 	<repository type="rpm-md" alias="python" priority="7">
-		<source path="obs://devel:languages:python/15.6"/>
+		<source path="obs://devel:languages:python/16.0"/>
 	</repository>
-	<repository type="rpm-dir" alias="Local_RPMs" priority="8">
-		<source path="dir:///home/public/tmp/myrepo_15.6"/>
+	<repository type="rpm-dir" alias="Glidos" priority="8">
+		<source path="obs://home:Glidos/16.0"/>
 	</repository>
 	<packages type="image">
 		<package name="checkmedia"/>
 		<package name="cryptsetup"/>
-		<package name="patterns-openSUSE-base"/>
 		<package name="plymouth-theme-bgrt"/>
 		<package name="plymouth-dracut"/>
 		<package name="grub2-branding-openSUSE"/>
-		<package name="ifplugd"/>
+		<package name="NetworkManager"/>
 		<package name="iputils"/>
 		<package name="vim"/>
 		<package name="grub2"/>
@@ -102,7 +89,7 @@
 		<package name="ntp"/>
 		<package name="nfs-client"/>
 		<package name="ucode-intel"/>
-		<package name="intel-vaapi-driver"/>
+		<package name="intel-media-driver"/>
 		<package name="xorg-x11-server"/>
 		<package name="xf86-input-evdev"/>
 		<package name="twm"/>
@@ -136,6 +123,6 @@
 		<package name="glibc-locale"/>
 		<package name="cracklib-dict-full"/>
 		<package name="ca-certificates"/>
-		<package name="openSUSE-release"/>
+		<package name="distribution-release"/>
 	</packages>
 </image>

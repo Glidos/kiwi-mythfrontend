@@ -35,6 +35,7 @@ suseSetupProduct
 # Activate services
 #--------------------------------------
 suseInsertService sshd
+suseInsertService NetworkManager
 
 #======================================
 # Setup default target, multi-user
@@ -46,8 +47,7 @@ suseInsertService ntpd
 
 ldconfig
 
-chmod +s /usr/bin/Xorg
-patch -p 0 -i /patches/xorg.patch
+chmod +s /usr/bin/Xorg.bin
 
 baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SEARCHLIST "home.arpa"
 baseUpdateSysConfig /etc/sysconfig/network/config NETCONFIG_DNS_STATIC_SERVERS "10.0.0.2"

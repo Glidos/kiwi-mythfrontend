@@ -1,8 +1,0 @@
---- a/etc/permissions.local	2013-09-27 21:38:12.000000000 +0100
-+++ b/etc/permissions.local	2014-01-27 17:08:36.965723884 +0000
-@@ -34,4 +34,4 @@
- # setuid bit on Xorg is only needed if no display manager, ie startx
- # is used. Beware of CVE-2010-2240.
- #
--#/usr/bin/Xorg                 root:root       4711
-+/usr/bin/Xorg                 root:root       4711
